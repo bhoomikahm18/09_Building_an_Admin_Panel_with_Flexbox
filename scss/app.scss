@@ -195,3 +195,41 @@ i {
         }
     }
 }
+
+.content{
+    flex: 1;
+    padding: 1rem;
+    background-color: $gray;
+    h2{
+        text-align: center;
+    }
+}
+
+.new-client{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .field{
+        margin-bottom: 1rem;
+        flex: 0 0 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: .5rem;
+        @include tablet{
+            flex: 0 0 50%;
+
+        }
+        label{
+            flex: 0 0 120px;
+            padding-left: 1rem;
+        }
+        input[type="text"],
+        textarea{
+            flex: 1;
+            border: none;
+            padding: .5rem 1rem;
+        }
+    }
+}
